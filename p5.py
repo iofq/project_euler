@@ -12,9 +12,8 @@ def f(n):
 
 def iter():
     i = 2520 #it won't be smaller than this
-    smallest = 0
 
-    while(smallest == 0):
+    while(True): #just run until we find an answer
         if(f(i)):
             return i
         else:
