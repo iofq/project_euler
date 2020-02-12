@@ -13,9 +13,8 @@ Find the product abc.
 #because a < b < c, a must be < 1000/3 
 
 def f(n):
-    i = 0
-    for a in range(1, 333):
-        for b in range(a, 1000): # b > a
+    for a in range(1, n//3):
+        for b in range(a, n): # b > a
             c = n - b - a #calculate sum here instead of iterating c as well
             if (a**2 + b**2) == (c**2):
                 return a * b * c
